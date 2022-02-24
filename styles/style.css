@@ -1,0 +1,14 @@
+.tittle
+{
+    font-size: 1.5em;
+    text-align: left;
+    color: #fff;
+    background-color: #5d7e92;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+body
+{
+    background-color: #cbe7f8;
+}
