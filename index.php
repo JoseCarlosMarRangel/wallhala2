@@ -8,7 +8,7 @@
     <title>Wallhala</title>
     <!--- Estilo de la barra de search-->
     <link rel="stylesheet" href="./barradebusqueda/style.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style1.css">
 
 </head>
 
