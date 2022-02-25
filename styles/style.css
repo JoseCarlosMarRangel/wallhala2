@@ -10,5 +10,20 @@
 
 body
 {
-    background-color: #cbe7f8;
+    background-color: #e4ecfc;
+}
+
+.cuerpo
+{
+    background-color: #e4ecfc;
+    padding: 1em;
+    display: inline-block;
+}
+
+.footer
+{
+    background-color: #5d7e92;
+    color: #fff;
+    padding: 0.5em;
+    display: inline-block;
 }
