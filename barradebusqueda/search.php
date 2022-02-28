@@ -32,22 +32,4 @@
     </div>
 </body>
 
-<footer>
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h1 class="logo-text">
-                    <span>C</span>ourse
-                    <span>B</span>ook
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua.
-                </p>
-                <div class="contact">
-                    <span><i class="fa fa-phone"></i>&nbsp;&nbsp;+1-123-456-7890</span>
-                    <span><i class="fa fa-envelope"></i>&nbsp;&nbsp;
-</footer>
-
 </html>
