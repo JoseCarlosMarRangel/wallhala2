@@ -18,3 +18,7 @@ Gestión del Desarrollo de Software
 # Link de Bootstrap:
 
 https://getbootstrap.com/docs/5.1/getting-started/download/
+
+# Link de JQuery:
+
+https://jquery.com/download/
