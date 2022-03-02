@@ -15,10 +15,14 @@ Lenguajes utilizados:
 #Materia:
 Gestión del Desarrollo de Software
 
-# Link de Bootstrap:
+# Requisitos:
 
-https://getbootstrap.com/docs/5.1/getting-started/download/
+---
 
-# Link de JQuery:
+Link de Bootstrap:
+-- https://getbootstrap.com/docs/5.1/getting-started/download/
 
-https://jquery.com/download/
+Link de JQuery:
+-- https://jquery.com/download/
+
+---
