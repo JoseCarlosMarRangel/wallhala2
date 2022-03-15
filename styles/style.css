@@ -1,22 +1,22 @@
 .tittle
 {
-    font-size: 1.5em;
     text-align: left;
     color: #fff;
     background-color: #5d7e92;
-    padding: 0.5em;
+    margin-left: 3%;
+    margin-top: 3%;
     display: inline-block;
 }
 
 body
 {
-    background-color: #e4ecfc;
+    background-color: #e3ecfc;
 }
 
 .cuerpo
 {
     background-color: #e4ecfc;
-    padding: 1em;
+    padding: 5em;
     display: inline-block;
 }
 
@@ -27,4 +27,50 @@ body
     padding: 0.5em;
     width: 100%;
     display: inline-block;
+}
+
+.nav-footer a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    margin-left: 3em;
+}
+
+.contact
+{
+    margin-left: 60%;
+}
+
+.social a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    margin-left: 0.5em;
+}
+
+.image-container
+{
+    background-color: #bbc3d3;
+    padding: 0.5em;
+    width: 100%;
+    display: inline-block;
+
+}
+
+.image-container img
+{
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    align-content: flex-start;
+}
+
+.texto-container 
+{
+    width: 33%;
+    color: #e3ecfc;
+    display: inline-block;
+    padding: 2%;
 }
