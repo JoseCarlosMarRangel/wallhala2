@@ -26,17 +26,18 @@
         <a href="#">Inicio</a>
         <a href="#">Acerca de</a>
         <a href="#">Contacto</a>
-        <!--<a href="#">Registrarse/Iniciar Sesion</a>-->
+        <!--<a href="./login/login.php">Registrarse/Iniciar Sesion</a>-->
         <?php
 
         session_start();
         if (!isset($_SESSION['usuario'])) {
             echo '<a href="./login/login.php">Login</a>';
         } else {
-            echo '<a href="login/cerrar_session.php">Logout</a>' . "<p> usuario: " . $_SESSION['usuario'] . "</p>";
+            echo '<a href="login/cerrar_session.php">Logout</a>';
         }
 
         ?>
+
     </div>
     <div id="navlist">
 
