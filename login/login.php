@@ -48,6 +48,7 @@ if (isset($_POST['aceptar'])) {
                     <input type="text" placeholder="Nombre" class="nombre" name="nombre">
                     <input type="password" placeholder="Contraseña" class="pass" name="pass">
                     <input type="password" placeholder="Confirma contraseña" class="repass" name="repass">
+                    <input type="text" placeholder="Correo" class="correo" name="correo">
                     <input type="submit" class="submit" value="REGISTRARSE" name="registrar">
                     <?php
 
@@ -55,11 +56,12 @@ if (isset($_POST['aceptar'])) {
                     if (isset($_POST['registrar'])) {
                         $usuario = $_POST['nombre'];
                         $contrasena = $_POST['pass'];
+                        $correo = $_POST['correo'];
 
                         if (!valida_usuario_regs($usuario, $conexion) && $usuario !== null) {
                             if ($_POST['pass'] == $_POST['repass'] && $_POST['pass'] !== '') {
 
-                                registrar_usuario_bd($usuario, $contrasena, $conexion);
+                                registrar_usuario_bd($usuario, $contrasena, $correo, $conexion);
                             } else {
                                 echo '<p class="alerta">Las contraseñas no son validas</p>';
                             }

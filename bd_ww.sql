@@ -1,3 +1,5 @@
+CREATE DATABASE wallhala;
+
 CREATE TABLE usuario(usuario varchar(30) NOT NULL PRIMARY KEY, pass varchar(30) NOT NULL, nombre varchar(50), apellido varchar(50), descripcion varchar(100), correo varchar(70));
 
 CREATE TABLE wallpaper(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, titulo varchar(30) NOT NULL, descripcion varchar(100), categoria int NOT NULL, imagen varchar(50) NOT NULL, usuario varchar(30) NOT NULL);

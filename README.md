@@ -26,3 +26,7 @@ Link de JQuery:
 -- https://jquery.com/download/
 
 ---
+
+----------------------------------------------------------------
+Notas extra:
+* Para que funcione en tu equipo modifica el archivo conexion con tus datos de PHPMYADMIN

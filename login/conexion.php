@@ -51,10 +51,12 @@ function valida_usuario_regs($usuario, $conexion)
 };
 
 //ingresar usuario en la base de datos
-function registrar_usuario_bd($usuario, $contrasena, $conexion)
+function registrar_usuario_bd($usuario, $contrasena, $correo, $conexion)
 {
 
-    $query = "INSERT INTO usuario (usuario, pass, rol) VALUES ('$usuario', $contrasena, 'asistente') ";
+
+    $query = "INSERT INTO usuario (usuario, pass, correo) 
+    VALUES ('$usuario','$contrasena', '$correo') ";
     //echo $query;
     //var_dump($query);
     $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
