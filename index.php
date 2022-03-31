@@ -24,7 +24,7 @@
 
     <div class="nav-item">
         <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
+        <a href="acercade.html">Acerca de</a>
         <a href="#">Contacto</a>
         <!--<a href="./login/login.php">Registrarse/Iniciar Sesion</a>-->
         <?php
