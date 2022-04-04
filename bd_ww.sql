@@ -9,5 +9,3 @@ CREATE TABLE categoria(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre varcha
 ALTER TABLE wallpaper ADD FOREIGN KEY(usuario) REFERENCES usuario(usuario);
 
 ALTER TABLE wallpaper ADD FOREIGN KEY(categoria) REFERENCES categoria(id);
-
-
