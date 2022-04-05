@@ -1,12 +1,59 @@
 
-div, h2{
-    color: white;
+.tittle{
+    text-align: left;
+    color: #fff;
+    background-color: #5d7e92;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: inline-block;
+    border: 1px;
+    border-radius: 15px;
 }
 
-p{
-    margin: 40px;
+
+.pie-pagina{
+    color: #fff;
+    padding: 0.5em;
+    width: 100%;
+    display: inline-block;
 }
 
-h2{
-    margin: 40px;
+.boton, .boton2, .boton3{
+    border: 1px solid #5d7e92; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #5d7e92; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}
+
+header{
+    padding: auto;
+}
+
+img{
+    text-align: right;
+}
+
+body{
+    color: #fff;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.contenedor{
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.cuerpo h2{
+    padding: 10px;
+    margin: 25px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.texto-arriba-imagen{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 110%;
 }
