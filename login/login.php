@@ -1,3 +1,4 @@
+<!-- funcion de validar usuario y redireccionarlo al login si es correcto-->
 <?php
 require 'conexion.php';
 $valido = false;
@@ -43,13 +44,18 @@ if (isset($_POST['aceptar'])) {
     <div class="container">
         <div class="login-container">
             <div class="register">
+
+                <!-- Cuadro formulio de registro-->
                 <h2>Registrarse</h2>
+
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                     <input type="text" placeholder="Nombre" class="nombre" name="nombre">
                     <input type="password" placeholder="Contraseña" class="pass" name="pass">
                     <input type="password" placeholder="Confirma contraseña" class="repass" name="repass">
                     <input type="text" placeholder="Correo" class="correo" name="correo">
                     <input type="submit" class="submit" value="REGISTRARSE" name="registrar">
+
+                    <!-- funcion para validar el usuario -->
                     <?php
 
 
@@ -78,16 +84,20 @@ if (isset($_POST['aceptar'])) {
             </div>
 
             <div class="login">
+                <!-- cuadro o formulario de login-->
                 <h2>Iniciar Sesión</h2>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                     <input type="text" placeholder="Nombre" class="nombre" name="nombre">
                     <input type="password" placeholder="Contraseña" class="pass" name="pass">
                     <input type="submit" class="submit" value="Entrar" name="aceptar">
+
+                    <!-- validar si el usuario es valido-->
                     <?php
                     if (!$valido && isset($_POST['aceptar'])) {
                         echo '<p class="alerta" >Usuario no valido</p>';
                     }
                     ?>
+                    <!-- limpiar los cuadros de texto para login-->
                     <input class="submit" type="reset" value="cancel">
                 </form>
                 <input type="submit" class="submit" value="regresar" name="regresar"

@@ -1,5 +1,5 @@
 <?php
-
+// * Datos para conexion a la base de datos
 $bd = 'wallhala';
 $servidor = 'localhost';
 $usuario = 'ghost'; //$usuario = 'ghost';
@@ -19,7 +19,7 @@ if (!$conexion) {
 function valida_usuario_bd($usuario, $contrasena, $conexion)
 {
     $query = "SELECT * FROM usuario WHERE usuario = '$usuario' AND pass = '$contrasena'";
-    echo $query;
+    //echo $query;
     $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
     $fila = $resultado->fetch_assoc();
     /*if($fila["rol"] === "administrador")
@@ -33,6 +33,7 @@ function valida_usuario_bd($usuario, $contrasena, $conexion)
     }
 };
 
+// * Validar registro de usuario
 function valida_usuario_regs($usuario, $conexion)
 {
     $query = "SELECT * FROM usuario WHERE usuario = '$usuario'";
@@ -50,7 +51,7 @@ function valida_usuario_regs($usuario, $conexion)
     }
 };
 
-//ingresar usuario en la base de datos
+// * ingresar usuario en la base de datos
 function registrar_usuario_bd($usuario, $contrasena, $correo, $conexion)
 {
 

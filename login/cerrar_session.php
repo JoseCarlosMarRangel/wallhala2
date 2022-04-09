@@ -1,3 +1,4 @@
+<!-- * Sirve para destruir la sesion -->
 <?php
 
 require 'abrir_session.php';

@@ -18,15 +18,18 @@
 
 <body>
 
+    <!--Cabecera de la paginación-->
     <div class=header>
         <h1 class="tittle"> WallGames</h1>
     </div>
 
+    <!-- menu navbar-->
     <div class="nav-item">
-        <a href="#">Inicio</a>
+        <a href="index.php">Inicio</a>
         <a href="acercade.html">Acerca de</a>
         <a href="#">Contacto</a>
-        <!--<a href="./login/login.php">Registrarse/Iniciar Sesion</a>-->
+
+        <!-- funcion para que inicie sesion y la muestre o te permita salirte-->
         <?php
 
         session_start();
@@ -39,6 +42,8 @@
         ?>
 
     </div>
+
+    <!-- Barra de busqueda-->
     <div id="navlist">
 
         <?php
@@ -47,6 +52,7 @@
 
     </div>
 
+    <!-- Vista de imagenes de la página-->
     <div class="image-container">
         <div class="texto-container">
             <h2>Comparte y descarga imagenes o
@@ -73,6 +79,7 @@
     <script src="js/bootstrap.min.js"></script>
 </body>
 
+<!-- Pie de página -->
 <footer>
     <div class="footer">
         <div class="footer-content">
@@ -82,7 +89,8 @@
 
                 <div class="nav-footer">
                     <a>Wallhala</a>
-                    <a href="#">Inicio</a>
+                    <a href="index.php">Inicio</a>
+                    <a href="acercade.html">Acerca de</a>
                     <a href="#">Contacto</a>
                     <a href="#">Comunidad</a>
                 </div>
