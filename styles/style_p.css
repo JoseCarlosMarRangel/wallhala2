@@ -1,0 +1,53 @@
+
+.boton, .boton2, .boton3{
+    border: 1px solid #5d7e92; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #5d7e92; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}
+
+.tittle{
+    text-align: left;
+    color: #fff;
+    background-color: #5d7e92;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: inline-block;
+    border: 1px;
+    border-radius: 15px;
+}
+
+#navlist{
+    text-align: right;
+    margin-left: 20%;
+    margin-right: 45px;
+}
+body{
+    background-color: #e3ecfc;
+}
+
+.foto-nombre-usuer{
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.foto-usuario, img{
+    margin: 25px;
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 150% auto;
+}
+
+
+.imagenes-creadas{
+    text-align: center;
+    text-decoration: underline;
+}
