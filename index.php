@@ -27,7 +27,7 @@
     <div class="nav-item">
         <a href="index.php">Inicio</a>
         <a href="acercade.html">Acerca de</a>
-        <a href="#">Contacto</a>
+        <a href="contacto/contactanos.php">Contacto</a>
 
         <!-- funcion para que inicie sesion y la muestre o te permita salirte-->
         <?php
@@ -91,8 +91,7 @@
                     <a>Wallhala</a>
                     <a href="index.php">Inicio</a>
                     <a href="acercade.html">Acerca de</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Comunidad</a>
+                    <a href="contacto/contactanos.php">Contacto</a>
                 </div>
 
                 <div class="contact">
