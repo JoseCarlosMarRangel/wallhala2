@@ -36,6 +36,7 @@
         if (!isset($_SESSION['usuario'])) {
             echo '<a href="./login/login.php">Login</a>';
         } else {
+            echo '<a href="perfil.php">Perfil</a>';
             echo '<a href="login/cerrar_session.php">Logout</a>';
         }
 

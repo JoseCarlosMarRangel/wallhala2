@@ -75,12 +75,39 @@ function retornar_datos_usuario($usuario, $conexion)
 {
     //var_dump($usuario, $contrasena, $conexion);
     //$crypt = md5($contrasena);
-    $query = "select usuario, rol from usuario where usuario = '$usuario' and rol = 'administrador'";
+    $query = "select usuario from usuario where usuario = '$usuario'";
     $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
     if ($resultado) {
-        while ($fila['rol'] = $resultado->fetch_assoc()) {
-            return 'administrador';
-        }
+        //sacar el usuario
+        $fila = $resultado->fetch_assoc();
+        return $fila["usuario"];
+    } else {
+        die("Error: " . mysqli_error($conexion));
+    }
+};
+
+function completar_regitro($usuario, $nombre, $apellido, $descripcion, $correo, $conexion)
+{
+    $query = "UPDATE usuario SET nombre = '$nombre', apellido = '$apellido', descripcion = '$descripcion', correo ='$correo' WHERE usuario = '$usuario'";
+    $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
+    if ($resultado) {
+        echo "<p class='alerta'> Se completo el registro </p>";
+    } else {
+        echo "<p class='alerta'> No se pudo completar el registro </p>";
+    }
+};
+
+//* retornamos los datos */
+function retornar_datos_usuario2($usuario, $conexion)
+{
+    //var_dump($usuario, $contrasena, $conexion);
+    //$crypt = md5($contrasena);
+    $query = "select nombre,apellido,descripcion,correo from usuario where usuario = '$usuario'";
+    $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
+    if ($resultado) {
+        //sacar el usuario
+        $fila = $resultado->fetch_assoc();
+        return $fila;
     } else {
         die("Error: " . mysqli_error($conexion));
     }
