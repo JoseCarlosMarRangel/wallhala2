@@ -44,14 +44,7 @@
 
     </div>
 
-    <!-- Barra de busqueda-->
-    <div id="navlist">
-
-        <?php
-        include "barradebusqueda/search.php";
-        ?>
-
-    </div>
+    
 
     <!-- Vista de imagenes de la página-->
     <div class="image-container">

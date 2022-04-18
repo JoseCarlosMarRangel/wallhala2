@@ -29,13 +29,6 @@ session_start();
             <a class="boton3" href="#">Contactanos</a>
         </div>
     </div>
-    <!--Barra de busqueda -->
-    <br>
-    <div id="navlist">
-        <?php
-        include "barradebusqueda/search.php";
-        ?>
-    </div>
 
 </header>
 

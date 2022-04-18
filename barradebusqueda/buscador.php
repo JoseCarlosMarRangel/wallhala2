@@ -1,6 +1,6 @@
 <?php
 
-	requiere '../login/conexion.php';
+	include 'login/conexion.php';
 
 	if (!isset($_POST['buscar'])) {
 		$_POST['buscar'] = "";

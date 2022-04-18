@@ -24,8 +24,8 @@
     </div>
 
     <div class="nav-item">
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
+        <a href="../index.php">Inicio</a>
+        <a href="../acercade.html">Acerca de</a>
         <a href="../contacto/contactanos.php">Contacto</a>
         <!--<a href="./login/login.php">Registrarse/Iniciar Sesion</a>-->
         <?php
@@ -63,8 +63,8 @@
 
                 <div class="nav-footer">
                     <a>Wallhala</a>
-                    <a href="#">Inicio</a>
-                    <a href="#">Contacto</a>
+                    <a href="../index.php">Inicio</a>
+                    <a href="../contacto/contactanos.php">Contacto</a>
                     <a href="#">Comunidad</a>
                 </div>
 
