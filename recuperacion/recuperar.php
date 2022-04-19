@@ -36,6 +36,7 @@
                             ?>
 
                         <input class=" btn submit" type="reset" value="Cancelar">
+                        <input type="submit" class="btn submit" value="regresar" name="Regresar" onclick="location.href='../index.php'">
                     </div>
                     
                 </form>

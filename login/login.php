@@ -35,6 +35,8 @@ if (isset($_POST['aceptar'])) {
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Login</title>
@@ -49,11 +51,11 @@ if (isset($_POST['aceptar'])) {
                 <h2>Registrarse</h2>
 
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
-                    <input type="text" placeholder="Nombre" class="nombre" name="nombre">
-                    <input type="password" placeholder="Contraseña" class="pass" name="pass">
-                    <input type="password" placeholder="Confirma contraseña" class="repass" name="repass">
-                    <input type="text" placeholder="Correo" class="correo" name="correo">
-                    <input type="submit" class="submit" value="REGISTRARSE" name="registrar">
+                    <input type="text" placeholder="Nombre" class="nombre form-control" name="nombre">
+                    <input type="password" placeholder="Contraseña" class="pass form-control" name="pass">
+                    <input type="password" placeholder="Confirma contraseña" class="repass form-control" name="repass">
+                    <input type="text form-control" placeholder="Correo" class="correo" name="correo">
+                    <input type="submit" class="btn submit" value="Registrarse" name="registrar">
 
                     <!-- funcion para validar el usuario -->
                     <?php
@@ -79,7 +81,7 @@ if (isset($_POST['aceptar'])) {
 
                     ?>
 
-                    <input class="submit" type="reset" value="cancel">
+                    <input class="btn submit" type="reset" value="cancel">
                 </form>
             </div>
 
@@ -87,9 +89,9 @@ if (isset($_POST['aceptar'])) {
                 <!-- cuadro o formulario de login-->
                 <h2>Iniciar Sesión</h2>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
-                    <input type="text" placeholder="Nombre" class="nombre" name="nombre">
-                    <input type="password" placeholder="Contraseña" class="pass" name="pass">
-                    <input type="submit" class="submit" value="Entrar" name="aceptar">
+                    <input type="text" placeholder="Nombre" class="nombre form-control" name="nombre">
+                    <input type="password" placeholder="Contraseña" class="pass form-control" name="pass">
+                    <input type="submit" class="btn submit" value="Entrar" name="aceptar">
 
                     <!-- validar si el usuario es valido-->
                     <?php
@@ -98,10 +100,12 @@ if (isset($_POST['aceptar'])) {
                     }
                     ?>
                     <!-- limpiar los cuadros de texto para login-->
-                    <input class="submit" type="reset" value="cancel">
+                    <input class="btn submit" type="reset" value="Cancelar">
                 </form>
-                <input type="submit" class="submit" value="regresar" name="regresar"
+                <input type="submit" class="btn submit" value="Regresar" name="Regresar"
                     onclick="location.href='../index.php'">
+                <input type="submit" class="btn submit" value="Recuperar" name="Recuperar"
+                    onclick="location.href='../recuperacion/recuperar.php'">
 
             </div>
         </div>
