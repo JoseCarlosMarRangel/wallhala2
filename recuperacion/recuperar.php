@@ -30,13 +30,24 @@
                     <div class="d-grid col-6 mx-auto">
                         <input type="submit" class=" btn submit" value="Recuperar" name="recuperar">
                             <?php
-                                        //
-                                        //Poner una funcion para poder registrar la nueva contraseña del usuario
-                                        //
+                                require '../login/conexion.php';
+
+                                if (isset($_POST['recuperar'])) {
+                                    $usuario = $_POST['nombre'];
+                                    $contrasena = $_POST['pass'];
+
+                                        if ($_POST['pass'] == $_POST['repass'] && $_POST['pass'] !== '') {
+
+                                            cambiar_contrasena($usuario, $contrasena, $conexion);
+                                        } else {
+                                            echo '<p class="alerta">Las contraseñas no son validas</p>';
+                                        }
+                                }
+
                             ?>
 
                         <input class=" btn submit" type="reset" value="Cancelar">
-                        <input type="submit" class="btn submit" value="regresar" name="Regresar" onclick="location.href='../index.php'">
+                        <input type="button" class="btn submit" value="Regresar" name="Regresar" onclick="location.href='../index.php'">
                     </div>
                     
                 </form>

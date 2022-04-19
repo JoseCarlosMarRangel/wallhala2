@@ -112,3 +112,17 @@ function retornar_datos_usuario2($usuario, $conexion)
         die("Error: " . mysqli_error($conexion));
     }
 };
+
+//Cambiar contras
+function cambiar_contrasena($usuario, $contrasena, $conexion)
+{
+    //var_dump($usuario, $contrasena, $conexion);
+    //$crypt = md5($contrasena);
+    $query = "UPDATE usuario SET pass = '$contrasena' where usuario = '$usuario'";
+    $resultado = mysqli_query($conexion, $query) or die('Consulta fallida');
+    if ($resultado) {
+        echo "<p class='alerta'> Se actualizo correctamente </p>";
+    } else {
+        die("Error: " . mysqli_error($conexion));
+    }
+};
