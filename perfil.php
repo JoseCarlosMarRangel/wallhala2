@@ -26,7 +26,7 @@ session_start();
         <div class="menu" align="right">
             <a class="boton" href="index.php">Inicio</a>
             <a class="boton2" href="acercade.html">Acerca de</a>
-            <a class="boton3" href="#">Contactanos</a>
+            <a class="boton3" href="contacto/contactanos.php">Contactanos</a>
         </div>
     </div>
 
